@@ -59,10 +59,11 @@ section {
     padding: 80px 20px;
     min-height: 100vh;
     text-align: center;
+
 }
 
 section h1 {
-    margin-bottom: 20px;
+    margin-bottom: -10px;
     font-size: 2.5em;
 }
 
@@ -117,36 +118,155 @@ a:hover {
     align-items: center;
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Makes the container circular */
-    overflow: hidden; /* Hides overflow to make image fit within circle */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    border: 5px solid #a8c2e0; /* Optional border color */
+    border-radius: 50%;
+    /* Makes the container circular */
+    overflow: hidden;
+    /* Hides overflow to make image fit within circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    border: 5px solid #a8c2e0;
+    /* Optional border color */
 }
 
 .profile-pic {
     width: 100%;
-    object-fit:cover; /* Keeps image nicely centered within the circle */
-    object-position: center 30%;
+    object-fit: cover;
+    /* Keeps image nicely centered within the circle */
 }
 
 /* Icon container styling */
 .contact-glyph {
-    display: inline-flex;         /* Centers icons nicely if there are multiple */
+    display: inline-flex;
+    /* Centers icons nicely if there are multiple */
     align-items: center;
     justify-content: center;
-    width: 50px;                  /* Adjust size as needed */
+    width: 50px;
+    /* Adjust size as needed */
     height: 50px;
-    margin: 10px;                 /* Space between icons */
-    border-radius: 50%;           /* Makes icons circular */
-    background-color: #333;       /* Dark background color */
-    color: #4DA8DA;               /* Light blue color for the icon itself */
-    font-size: 1.5em;             /* Icon size */
+    margin: 10px;
+    /* Space between icons */
+    border-radius: 50%;
+    /* Makes icons circular */
+    background-color: #333;
+    /* Dark background color */
+    color: #4DA8DA;
+    /* Light blue color for the icon itself */
+    font-size: 1.5em;
+    /* Icon size */
     transition: background-color 0.3s, color 0.3s;
-    cursor: pointer;              /* Adds a pointer cursor on hover */
+    cursor: pointer;
+    /* Adds a pointer cursor on hover */
 }
 
 /* Hover effect for icons */
 .contact-glyph:hover {
-    background-color: #4DA8DA;    /* Changes background color to light blue on hover */
-    color: #fff;                  /* Changes icon color to white on hover */
+    background-color: #4DA8DA;
+    /* Changes background color to light blue on hover */
+    color: #fff;
+    /* Changes icon color to white on hover */
+}
+
+/* Experience Section */
+#experience {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding: 20px;
+}
+
+#coursework {
+    margin-top: 40px;
+}
+
+#work_experience {
+    margin-top: 60px;
+}
+
+#experience h1 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#experience p {
+    font-size: 16px;
+    color: #cccccc;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Experience Section */
+#experience {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#experience h1 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#experience p {
+    font-size: 16px;
+    color: #cccccc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flex container for course categories */
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.course-category {
+    width: 33%;
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Course category heading */
+.course-category p {
+    font-weight: bold;
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 8px;
+}
+
+/* Course list styling */
+.course-category ul {
+    list-style-type: disc;
+    padding: 15px;
+    padding-top: 0;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100px;
+}
+
+.course-category ul li {
+    margin: -10px 0;
+    /* Minimal margin between list items */
+    font-size: 14px;
+    color: #e0e0e0;
+    text-align: left;
+}
+
+.course-category ul li p {
+    margin: 0;
+    font-weight: normal;
+}
+
+#footer {
+    text-align: center;
 }
