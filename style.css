@@ -13,6 +13,14 @@ body {
     line-height: 1.6;
 }
 
+/* Main Content Wrapper */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
 /* Navbar styling */
 #navbar {
     background-color: #333;
@@ -64,8 +72,26 @@ section p {
     margin: auto;
 }
 
+
+/* Hyperlink styling */
+a {
+    color: #4DA8DA;
+    text-decoration: none;
+    transition: color 0.1s;
+}
+
+a:hover {
+    color: #71C0F6;
+    text-decoration: underline;
+}
+
 /* Different background colors for each section */
 #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
     background-color: #282828;
 }
 
@@ -75,4 +101,52 @@ section p {
 
 #contact {
     background-color: #383838;
+}
+
+/* Classes */
+
+/* Text Styling */
+.about-me {
+    max-width: 600px;
+    margin-top: 15px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Hides overflow to make image fit within circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border: 5px solid #a8c2e0; /* Optional border color */
+}
+
+.profile-pic {
+    width: 100%;
+    object-fit:cover; /* Keeps image nicely centered within the circle */
+    object-position: center 30%;
+}
+
+/* Icon container styling */
+.contact-glyph {
+    display: inline-flex;         /* Centers icons nicely if there are multiple */
+    align-items: center;
+    justify-content: center;
+    width: 50px;                  /* Adjust size as needed */
+    height: 50px;
+    margin: 10px;                 /* Space between icons */
+    border-radius: 50%;           /* Makes icons circular */
+    background-color: #333;       /* Dark background color */
+    color: #4DA8DA;               /* Light blue color for the icon itself */
+    font-size: 1.5em;             /* Icon size */
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;              /* Adds a pointer cursor on hover */
+}
+
+/* Hover effect for icons */
+.contact-glyph:hover {
+    background-color: #4DA8DA;    /* Changes background color to light blue on hover */
+    color: #fff;                  /* Changes icon color to white on hover */
 }
