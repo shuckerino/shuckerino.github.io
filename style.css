@@ -225,8 +225,8 @@ a:hover {
 }
 
 .course-category {
-    width: 33%;
-    padding: 10px;
+    width: 25%;
+    padding: 12px;
     background-color: #2a2a2a;
     border-radius: 8px;
     display: flex;
@@ -244,19 +244,19 @@ a:hover {
 /* Course list styling */
 .course-category ul {
     list-style-type: disc;
-    padding: 15px;
+    padding: 10px;
     padding-top: 0;
     background-color: #2a2a2a;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: left;
     min-height: 100px;
 }
 
 .course-category ul li {
     margin: -10px 0;
-    /* Minimal margin between list items */
     font-size: 14px;
     color: #e0e0e0;
     text-align: left;
@@ -265,6 +265,7 @@ a:hover {
 .course-category ul li p {
     margin: 0;
     font-weight: normal;
+    text-align: left;
 }
 
 #footer {
